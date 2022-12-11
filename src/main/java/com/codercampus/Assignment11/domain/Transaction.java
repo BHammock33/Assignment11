@@ -44,6 +44,7 @@ public class Transaction implements Serializable {
 	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
 	}
+	//type returns "D" or "C"
 	public String getType() {
 		return type;
 	}
@@ -57,3 +58,5 @@ public class Transaction implements Serializable {
 	}
 	
 }
+
+

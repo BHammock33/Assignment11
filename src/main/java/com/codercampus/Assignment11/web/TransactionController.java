@@ -1,5 +1,6 @@
 package com.codercampus.Assignment11.web;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class TransactionController {
 		model.put("transactions", transactions);
 		return "transactions";
 	}
-	@GetMapping("/transaction")
+	@GetMapping("/transaction/{transactionId}")
 	public String getTransaction(@PathVariable Long transactionId, ModelMap model) {
 		 Transaction foundTransaction = transactionService.findById(transactionId);
 		 model.put("transaction", foundTransaction);

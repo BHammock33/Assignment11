@@ -37,8 +37,8 @@ public class TransactionRepository {
 
 	public Transaction findById(Long id) {
 		for (Transaction transaction : transactions) {
-			if (transaction.getId() == id)
-				return transaction;
+			if (transaction.getId().equals(id))
+				return transaction; 
 		}
 		return null;
 	}
