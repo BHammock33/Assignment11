@@ -36,9 +36,10 @@ public class TransactionRepository {
 	}
 
 	public Transaction findById(Long id) {
-		for (Transaction transaction : transactions) {
-			if (transaction.getId().equals(id))
-				return transaction; 
+		for(Transaction transaction : transactions) {
+			if((transaction.getId()).equals(id)) {
+				return transaction;
+			}
 		}
 		return null;
 	}
