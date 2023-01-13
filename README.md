@@ -1,2 +1,2 @@
 # BHammockAssignment11
- Bennett Hammock assingment  11
+ Bennett Hammock assignment  11
